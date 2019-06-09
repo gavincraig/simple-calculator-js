@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Simple Calculator</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <Main class="container main">
+    <div class="row" style="margin-top:10%;">
+      <div class="col-1 col-sm-2"></div>
+      <div class="col-12 col-sm-8">
+        <h4 class="app-title">Simple Calculator</h4>
+        <div class="card calculator">
+          <div class="card-body">
+            <h5 class="card-header" id="calculator-value" style="text-align: right">0</h5>
+            <div class="container-fluid calculator-keys">
+              <div class="row">
+                <div class="col-7 col-md-8 number-pad">
+                  <div class="row" style="text-align: center">
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="7">7</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="8">8</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="9">9</button>
+                    </div>
+                  </div>
+                  <div class="row" style="text-align: center">
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="4">4</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="5">5</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="6">6</button>
+                    </div>
+                  </div>
+                  <div class="row" style="text-align: center">
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="1">1</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="2">2</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="3">3</button>
+                    </div>
+                  </div>
+                  <div class="row" style="text-align: center">
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="0">0</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn btn-secondary" value="." data-operator="decimal">.</button>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5 col-md-4 modifiers">
+                  <div class="row" style="text-align:start">
+                    <div class="col-6">
+                      <button type="button" class="btn btn-secondary" data-operator="divide">÷</button>
+                    </div>
+                    <div class="col-6">
+                      <button type="button" class="btn btn-secondary" data-operator="delete">del</button>
+                    </div>
+                  </div>
+                  <div class="row" style="text-align: center">
+                    <div class="col-6">
+                      <button type="button" class="btn btn-secondary" data-operator="multiply">&times</button>
+                    </div>
+                    <div class="col-6">
+                      <button type="button" class="btn btn-secondary" data-operator="clear">C</button>
+                    </div>
+                  </div>
+                  <div class="row" style="text-align: center">
+                    <div class="col-6">
+                      <button type="button" class="btn btn-secondary" data-operator="subtract">-</button>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                  </div>
+                  <div class="row" style="text-align: center">
+                    <div class="col-6">
+                      <button type="button" class="btn btn-secondary" data-operator="add">+</button>
+                    </div>
+                    <div class="col-6">
+                      <button type="button" class="btn btn-secondary" data-operator="equals">=</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 col-sm-2">
+          </div>
+  </Main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $("body").bootstrapMaterialDesign();
+    });
+  </script>
+</body>
+
+</html>

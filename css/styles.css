@@ -1,0 +1,37 @@
+html {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.app-title {
+  font-weight: lighter;
+  letter-spacing:2px;
+}
+
+.calculator {
+  margin-top: 5vh;
+}
+
+.btn {
+  padding: 1rem;
+  width: 100%;
+
+  border: none;
+  display: inline-block;
+}
+
+.number-pad {
+}
+
+.modifiers {
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+  border-color: #e0e0e0;
+  background-color: #f2f2f2;
+}
